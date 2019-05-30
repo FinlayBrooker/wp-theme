@@ -1,0 +1,1 @@
+!function($){"use strict";$(window).scroll(function(){var s=$(this).scrollTop();$(".middle").css({transform:"translate(0px, "+s/4+"%)"}),$(".front").css({transform:"translate(0px, -"+s/20+"%)"})})}(jQuery);

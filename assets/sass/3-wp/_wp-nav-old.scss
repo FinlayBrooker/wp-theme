@@ -1,0 +1,263 @@
+/* main nav */
+.main-navigation {
+	padding-top: 35px;
+  padding-right: 15px;
+  clear: both;
+  display: block;
+  float: right;
+  width: 100%;
+  ul {
+	  display: none;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+
+    ul {
+      left: -999em;
+      top: 0;
+      /* display: none; */
+      /* margin-left: 0.8em; */
+
+
+    li {
+        &:hover > ul,
+        &.focus > ul {
+          left: 100%;
+          border-bottom: solid 2px $accent-color;
+           /*float: left;*/
+           /*position: relative;*/
+
+        }
+      }
+      a {
+        width: 200px;
+      }
+
+      :hover > a,
+      .focus > a {
+      }
+
+      a:hover,
+      a.focus {
+        }
+      }
+
+
+      li:hover > ul,
+    li.focus > ul {
+      left: auto;
+    }
+  }
+
+  li {
+    float: left;
+    position: relative;
+
+    &:hover > a,
+    &.focus > a {
+    }
+  }
+
+  a {
+
+    display: block;
+    text-decoration: none;
+     /* position: relative;
+      font-weight: 400;
+      font-size: 17px;
+      margin-left: 20px;
+      border-bottom-style: none;
+      color: $nav-link-black;
+      border-bottom: 0px;*/
+  }
+
+  .current_page_item > a,
+  .current-menu-item > a,
+  .current_page_ancestor > a,
+  .current-menu-ancestor > a {
+    border-bottom: solid $accent-color;
+    border-bottom: solid 1px #fff;
+    color: #fff;
+  }
+}
+
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+ /* border-bottom: solid 2px $accent-color; */
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+ /*border-bottom: solid $accent-color; */
+
+}
+
+/* tablet menu */
+
+@media screen and (max-width: 600px) {
+   .menu-toggle,
+   .main-navigation.toggled .nav-menu {
+      display: block;
+   }
+   .main-navigation ul{
+       display:none;
+   }
+   .main-navigation :hover ul {
+      display: block;
+   }
+}
+
+.menu-toggle {
+  float: right;
+
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+  color: white;
+
+}
+
+.main-navigation.toggled ul {
+	display: block;
+  float: left;
+	width: 180px;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  clear: both;
+}
+
+
+.main-navigation.toggled {
+	width: 100%;
+	margin: 0px auto;
+  height: 100vh;
+	transition: all .2s ease-in-out;
+}
+
+.main-navigation .primary-menu {
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.main-navigation .menu-item-has-children > a {
+	display: block;
+}
+
+.menuBtn-icon-line01, .menuBtn-icon-line02, .menuBtn-icon-line03 {
+    background-color: white; }
+
+.menuBtn-icon-line01, .menuBtn-icon-line03 {
+  margin: 0 auto; }
+
+.menuBtn-icon-line02 {
+    margin: 4px auto; }
+
+.menuBtn-icon-line01, .menuBtn-icon-line02, .menuBtn-icon-line03 {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff; }
+
+.menuBtn-icon-line01, .menuBtn-icon-line02, .menuBtn-icon-line03 {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+.menuBtn-icon   {
+    display: inline-block;
+    width: 22px;
+    vertical-align: middle;
+}
+
+
+
+/* Small menu  */
+
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+  .menu-toggle {
+    display: none;
+  }
+  .main-navigation ul {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 37.5em) {
+
+  .menuBtn-icon   {
+      display: block;
+      width: 22px;
+      padding-top: 11px;
+
+  }
+
+
+			.main-navigation ul {
+				display: none;
+		    opacity: 0;
+			}
+		.main-navigation {
+			position: absolute;
+		  top: 0;
+		  right: 0;
+			padding-right: 0px;
+			display: block;
+			padding-top: 6px;
+			height: 52px;
+		  background-color: $bg-grey-2;
+		}
+
+
+		.main-navigation a {
+		  float: left;
+		  opacity: 1;
+		  font-weight: 700;
+		  font-size: 22px;
+			color: #ffffff;
+		  margin-right: 16px;
+		  margin-top: 8px;
+		  transition: all .2s ease-in-out;
+		}
+
+
+		.main-navigation li {
+		  top: 20px;
+		}
+
+		.main-navigation a:hover{
+		  border-bottom: none;
+			color: #fff;
+		}
+
+}
+
+	.comment-navigation,
+	.posts-navigation,
+	.post-navigation {
+
+	  .site-main & {
+	    margin: 0 0 1.5em;
+	    overflow: hidden;
+	  }
+
+	  .nav-previous {
+	    float: left;
+	    width: 50%;
+	  }
+
+	  .nav-next {
+	    float: right;
+	    text-align: right;
+	    width: 50%;
+	  }
+	}

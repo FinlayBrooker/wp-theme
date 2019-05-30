@@ -1,0 +1,154 @@
+// default button
+// button--arrow
+// button--mono
+// button--pink
+// button--blue
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]
+
+	border: 0px solid
+	border-color: $light-grey
+	border-radius: 3px
+	background: transparent
+	color: rgba(0, 0, 0, .8)
+	@include font-size(0.75)
+	line-height: 1
+  letter-spacing: .1em
+  font-weight: 700
+  text-transform: none
+  text-decoration: none
+  text-align: center
+  cursor: pointer
+	padding: .6em 1em .4em
+  white-space: nowrap
+  box-sizing: border-box
+  transition: all 0.2s ease-in-out
+  display: inline-block
+
+	&:hover
+		border-color: $color__border-button-hover
+    outline: 0
+    transition: all 0.2s ease-in-out
+	&:active,
+	&:focus
+		border-color: $color__border-button-focus
+    outline: 0
+    transition: all 0.2s ease-in-out
+
+.btn--arrow
+  padding-left: 2px
+  font-size: 20px
+  font-weight: 700
+  line-height: 1
+
+.btn--gold
+  color: white
+  background-color: $accent-color
+  border: 1px solid white
+  border-radius: 30px
+  padding: 5px 20px
+
+  &:hover,
+  &:active,
+  &:focus
+    color: white
+    background-color: shade($accent-color, 10%)
+    border: 1px solid $accent-color
+    outline: 0
+
+.btn--blue
+  color: white
+  background-color: $accent-color-2
+  border: 1px solid white
+  border-radius: 30px
+  padding: 5px 20px
+  &:hover,
+  &:active,
+  &:focus
+    color: white
+    background-color: shade($accent-color-2, 10%)
+    border: 1px solid $accent-color-2
+    outline: 0
+
+
+input.wpcf7-form-control.wpcf7-submit
+  color: #fff
+  background-color: $charcoal
+  border: none
+  border-radius: 2px
+  height: 2.7em
+
+  &:hover,
+  &:active,
+  &:focus
+    color: #fff
+    background-color: shade($charcoal, 10%)
+    border: none
+    outline: 0
+
+
+button.btn--gold
+  position: relative
+  display: block
+  margin: 0 auto
+  .fa-arrow-right
+    width: 18px
+    padding-left: 3px
+    transition: all 0.2s ease-in-out
+  &:hover
+    .fa-arrow-right
+      padding-left: 8px
+      transition: all 0.2s ease-in-out
+
+button.btn--blue
+  position: relative
+  display: block
+
+  .fa-arrow-right
+    width: 30px
+    padding-left: 3px
+
+    transition: all 0.2s ease-in-out
+  &:hover
+    .fa-arrow-right
+      width: 30px
+      padding-left: 10px
+
+      transition: all 0.2s ease-in-out
+
+
+
+.more-arrow-box--r
+  padding: 10px 0px 10px 39px
+  float: none
+  display: block
+  margin: 0 auto
+  width: 200px
+
+@media (max-width: 600px)
+  .more-arrow-box--r
+    padding: 10px 0px 10px 40px
+
+
+.more-arrow-box--r .fa-arrow-right
+  margin-right: 6px
+  transition: all 0.2s ease-in-out
+
+.more-arrow-box--r:hover .fa-arrow-right
+  color: $accent-color
+  margin-right: 2px
+  padding-right: 0px
+  transition: all 0.2s ease-in-out
+
+.more-arrow-box--r a
+  margin-right: 6px
+  transition: all 0.2s ease-in-out
+
+.more-arrow-box--r:hover a
+  color: $accent-color
+  border-bottom: solid 1px $accent-color
+  margin-right: 10px
+  transition: all 0.2s ease-in-out

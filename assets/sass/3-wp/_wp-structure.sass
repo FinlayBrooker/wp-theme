@@ -1,0 +1,23 @@
+.site-header
+  z-index: 3
+  height: 66px
+  position: relative
+  background-color: $charcoal
+  width: 100%
+
+.container
+  width: 100%
+  max-width: 1200px
+  padding: 0 15px
+  margin: 0 auto
+  box-sizing: border-box
+
+.container:after, .u-cf
+  content: ""
+  display: table
+  clear: both
+
+
+@media (max-width: 640px)
+  .site-header
+    height: 52px

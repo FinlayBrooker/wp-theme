@@ -1,0 +1,80 @@
+
+// Copy
+
+p
+	font-family: $font__main
+	color: $text-color
+	font-size: 17px
+	font-weight: 300
+	line-height: 1.7
+	margin-top: 0px
+
+strong
+	font-weight: bold
+
+dfn, cite, em, i
+	font-style: italic
+
+blockquote, q
+	quotes: "" ""
+	&:before,
+	&:after
+		content: ""
+
+blockquote, q
+	font-family: $font__main
+	quotes: "" ""
+	font-size: 1.8em
+	border-left: solid 10px $accent-color-2
+	padding: 0em 0.4em 0em 1.4em
+	margin-top: 1.8em
+	margin-bottom: 1.6em
+	margin-left: 1em
+
+
+
+.drop-cap
+	float: left
+	color: #968D74
+	font-size: 4em
+	line-height: 60px
+	padding-top: 6px
+	padding-right: 8px
+	padding-left: 3px
+	font-family: Georgia
+
+.drop-cap-2
+	float: left
+	color: #968D74
+	font-weight: 700
+	font-size: 4.5em
+	line-height: 0.6
+	padding-top: 28px
+	padding-right: 5px
+	font-family: "Baskerville Old Face", "Baskerville", Georgia
+
+address
+	margin: 0 0 1.5em
+
+pre
+	background: $color__background-pre
+	font-family: $font__pre
+	@include font-size(0.9375)
+	line-height: $font__line-height-pre
+	margin-bottom: 1.6em
+	max-width: 100%
+	overflow: auto
+	padding: 1.6em
+
+code, kbd, tt, var
+	color: $accent-color-2
+	font-family: $font__code
+
+
+abbr, acronym
+	border-bottom: 1px dotted $color__border-abbr
+	cursor: help
+
+mark, ins
+	background: $color__background-ins
+	text-decoration: none

@@ -1,0 +1,49 @@
+
+// primary area - asides, comments, posts
+
+
+// - asides
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+//  - comments area ---------
+.comment-content a {
+	word-wrap: break-word;
+	border-bottom: none;
+}
+.bypostauthor {
+	display: block;
+}
+
+//  - posts and pages --------
+
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0.3em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

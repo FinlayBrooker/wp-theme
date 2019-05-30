@@ -1,0 +1,87 @@
+/*!
+Theme Name: yellowtractor
+Theme URI: http://underscores.me/
+Author: yellowtractor
+Author URI: http://www.yellowtractor.co.uk
+Description: A Yellow Tractor Theme for Escone Solutions based on _s
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: yellowtractor
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+
+yellowtractor is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1 - TOOLS - normalise, helpers, vars and grids
+
+2 - BASE - The Basic Stuff: Typography, body, elements, buttons, links
+
+3 - WP - Styling Wordpress bits n bobs.
+
+4 - MODULES - Custom Code Snippets.
+
+5 - PAGES - Custom Page Styling.
+
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1 - TOOLS
+--------------------------------------------------------------*/
+@import "1-tools/bourbon";
+@import "1-tools/normalize";
+@import "1-tools/toast-grid";
+@import "1-tools/columns";
+@import "1-tools/mixins";
+@import "1-tools/vars";
+@import "1-tools/helpers";
+@import "1-tools/grid";
+
+/*--------------------------------------------------------------
+// 2 - BASE
+--------------------------------------------------------------*/
+@import "2-base/headings";
+@import "2-base/elements";
+@import "2-base/body";
+@import "2-base/copy";
+@import "2-base/links";
+@import "2-base/buttons";
+
+
+/*--------------------------------------------------------------
+// 3 - WP
+--------------------------------------------------------------*/
+@import "3-wp/wp-branding";
+@import "3-wp/wp-structure";
+@import "3-wp/wp-nav";
+@import "3-wp/wp-posts-pages";
+@import "3-wp/wp-extras";
+@import "3-wp/wp-media";
+@import "3-wp/wp-footer";
+
+/*--------------------------------------------------------------
+// 4 - modules
+--------------------------------------------------------------*/
+@import "4-modules/wraps";
+@import "4-modules/tables";
+@import "4-modules/social";
+@import "4-modules/leads";
+@import "4-modules/hexagons";
+
+
+/*--------------------------------------------------------------
+// 5 - pages
+--------------------------------------------------------------*/
+@import "5-pages/page-general";
+@import "5-pages/page-contact";
+@import "5-pages/page-home";

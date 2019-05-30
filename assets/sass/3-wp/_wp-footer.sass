@@ -1,0 +1,130 @@
+// footer //
+.site-footer
+  background: $bg-grey-2
+  color: white
+  position: relative
+  width: 100%
+  clear: both
+  .logo
+    padding-top: 70px
+    max-width: 300px
+
+.site-footer
+  h6
+    font-size: 15px
+
+@media (max-width: 950px)
+  .site-footer
+    .logo
+      padding-top: 80px
+      max-width: 200px
+
+@media (max-width: 880px)
+  .site-footer
+    .logo
+      padding-top: 80px
+      max-width: 180px
+
+// center the logo on mobile
+@media (max-width: 770px)
+  .site-footer
+    .logo
+      float: none
+      display: block
+      margin: 0 auto
+      padding-top: 20px
+
+// if we have a menu-2 in the footer....
+
+ul#menu-footer-menu
+  text-align: center
+  padding-top: 10px
+  padding-bottom: 15px
+
+#menu-footer-menu li
+  display: inline-block
+  position: relative
+  line-height: 1.2
+  border-right: solid 1px #555
+
+#menu-footer-menu li:last-child
+  border-right: none
+
+#menu-footer-menu li a
+  color: #888
+  text-decoration: none
+  padding-right: 9px
+  padding-left: 9px
+  font-weight: 400
+  border-bottom-style: none
+
+#menu-footer-menu li a:hover
+  color: #fff
+
+// sub-footer
+
+.sub-footer-wrap
+  background: #222
+  padding-top: 9px
+  padding-bottom: 0px
+
+.sub-footer-wrap
+  p
+    color: #555
+    font-size: 0.95em
+    line-height: 1.9em
+    vertical-align: middle
+  a
+    color: #666
+    border-bottom: none
+    &:hover
+      color: #aaa
+.design
+  float: right
+
+.copyright
+  float: left
+
+// center the text on mobile
+@media (max-width: 450px)
+  .sub-footer-wrap
+    padding-top: 6px
+    padding-bottom: 9px
+  .design
+    float: none
+    display: block
+    margin: 0 auto
+    max-width: 200px
+
+  .copyright
+    float: none
+    display: block
+    margin: 0 auto
+    max-width: 250px
+
+// social--footer icons
+
+.social--footer
+  position: relative
+  display: inline
+
+.menu-mini-social-menu-container
+  display: inline
+  float: right
+  margin-right: 20px
+
+
+
+.social--footer [class*="fa fa-"]
+  background-color: $accent-color
+  color: #777
+
+
+.social--footer .fa:hover
+  background-color: $accent-color
+  color: white
+
+
+.social--footer ul
+  margin: 0px
+  list-style: none

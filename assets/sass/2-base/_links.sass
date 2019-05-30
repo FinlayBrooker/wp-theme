@@ -1,0 +1,41 @@
+// default-link
+// more-link
+// selection-color
+
+a
+  color: $color__link
+  text-decoration: none
+  font-weight: 400
+  cursor: pointer
+
+  &:hover,
+  &:focus,
+  &:active
+    color: $color__link-hover
+    
+    outline: 0
+
+  &:focus
+    outline: thin dotted
+
+  &:hover,
+  &:active
+    outline: 0
+
+
+// selection-color
+
+body
+  -webkit-tap-highlight-color: $selection-color
+
+::selection
+  background: $selection-color
+
+::-moz-selection
+  background: $selection-color
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent

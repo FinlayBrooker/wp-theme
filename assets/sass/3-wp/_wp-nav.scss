@@ -1,0 +1,270 @@
+// navigation
+
+/* main nav */
+
+.main-navigation {
+	padding-top: 20px;
+	background-color: transparent;
+
+}
+
+.main-navigation ul {
+	display: block;
+	opacity: 1;
+}
+
+.main-navigation {
+ padding-right: 15px;
+ display: block;
+ float: right;
+}
+
+.main-navigation ul {
+  display: block;
+  opacity: 1;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  transition: all .2s ease-in-out;
+}
+
+
+.main-navigation li {
+  float: left;
+  position: relative;
+	line-height: inherit;
+}
+
+.main-navigation a {
+	position: relative;
+	display: block;
+	text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+	margin-left: 20px;
+
+  color: $nav-link-white;
+
+}
+
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  border-bottom: solid $neon-green;
+}
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+border-bottom: solid $neon-green;
+
+}
+
+.main-navigation ul ul {
+	display: none;
+	margin-left: 0.8em;
+}
+
+@media screen and (max-width: 860px) {
+   .menu-toggle,
+   .main-navigation.toggled .nav-menu {
+      display: block;
+   }
+   .main-navigation ul{
+       display:none;
+   }
+   .main-navigation :hover ul {
+      display: block;
+   }
+}
+
+/* Small menu. menu button toggle */
+
+.menuBtn-icon-line01, .menuBtn-icon-line03 {
+  margin: 0 auto;
+}
+
+.menuBtn-icon-line02 {
+    margin: 4px auto; }
+
+.menuBtn-icon-line01, .menuBtn-icon-line02, .menuBtn-icon-line03 {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff; }
+
+.menuBtn-icon-line01, .menuBtn-icon-line02, .menuBtn-icon-line03 {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
+
+
+.menuBtn-icon {
+    display: inline-block;
+    width: 26px;
+    vertical-align: middle;
+}
+
+#site-navigation:hover {
+	cursor: pointer;
+}
+
+.main-navigation.toggled .menuBtn-icon:hover > .menuBtn-icon-line02 {
+	background-color: transparent;
+}
+
+.main-navigation.toggled .menuBtn-icon:hover > .menuBtn-icon-line01 {
+	transform: translateY(280%) translateX(0%) rotate(45deg);
+}
+
+.main-navigation.toggled .menuBtn-icon:hover > .menuBtn-icon-line03 {
+	transform: translateY(-280%) translateX(0%) rotate(-45deg);
+}
+
+
+
+.menu-toggle {
+  float: right;
+
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+  color: white;
+
+}
+
+.main-navigation.toggled ul {
+	display: block;
+  margin: 0 auto;
+	width: 180px;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+  clear: both;
+}
+
+.main-navigation.toggled ul li {
+	display: block;
+}
+
+.main-navigation.toggled {
+	width: 100%;
+	margin: 0 auto;
+  height: 100vh;
+	transition: all .2s ease-in-out;
+}
+
+.main-navigation .primary-menu {
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.main-navigation .menu-item-has-children > a {
+	display: block;
+}
+
+
+
+
+	.menu-toggle {
+		display: none;
+	}
+
+
+
+
+/* Small menu. only */
+
+@media screen and (max-width: 860px) {
+
+	.menu-toggle {
+		display: block;
+	}
+
+	#site-navigation.main-navigation.toggled {
+		background: $accent-color-2;
+
+	}
+
+	.menuBtn-icon   {
+	    display: block;
+	    width: 22px;
+			padding-top: 11px;
+
+	}
+	.menuBtn-icon-line01, .menuBtn-icon-line02, .menuBtn-icon-line03 {
+	  background-color: white; }
+
+	.main-navigation ul {
+		display: none;
+    opacity: 0;
+	}
+
+.main-navigation {
+	position: absolute;
+  top: 0;
+  right: 0;
+	padding-right: 0px;
+	display: block;
+	padding-top: 6px;
+	height: 52px;
+  background-color: transparent;
+}
+
+
+.main-navigation a {
+  float: left;
+  opacity: 1;
+  font-weight: 700;
+  font-size: 30px;
+	color: #ffffff;
+  margin-right: 16px;
+  margin-top: 8px;
+	transition: all .2s ease-in-out;
+
+}
+
+
+.main-navigation li {
+  top: 20px;
+}
+
+.main-navigation a:hover{
+  border-bottom: none;
+	color: #fff;
+
+}
+
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_ancestor > a {
+border-bottom: solid 1px #fff;
+color: #fff;
+}
+
+
+
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+}

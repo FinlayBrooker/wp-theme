@@ -1,0 +1,30 @@
+.hex
+	width: $hex-width
+	height: $hex-height
+	object-fit: contain
+	display: flex
+	align-items: center
+	justify-content: center
+	clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)
+	-webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)
+
+
+@media (max-width:499px)
+	.hex
+		min-width: 200px
+		min-height: ($rootthree/2)*200px
+
+
+.hex p
+	width: 70%
+	font-size: 1.2em
+	text-align: center
+	font-weight: 700
+	display: flex
+	justify-content: center
+	flex-direction: column
+	margin-bottom: 0
+
+.hex img
+  width: auto
+  margin-top: -25%

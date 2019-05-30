@@ -1,0 +1,157 @@
+
+// backgrounds
+
+.bg-white
+	background: #fff
+
+.bg-grey
+	background: $bg-grey
+
+.bg-gold
+	background: $accent-color
+
+.bg-blue
+	background: $accent-color-2
+.bg-cream
+	background: $bg-cream
+
+.bg-light
+	background: $light-grey
+
+.bg-dark
+	background: $charcoal
+
+// center text,  hide & show elements
+.centered
+  text-align: center
+
+.hide
+  display: none
+
+.show
+  display: block
+
+.txt-left
+  text-align: left
+
+.txt-right
+  text-align: right
+
+// center the block & align elements
+
+
+.centerParent
+  vertical-align: middle
+  text-align: center
+  width: 100%
+  height: 100%
+
+.centerChild
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+
+.alignleft
+  display: inline
+  float: left
+  margin-right: 1.5em
+
+.alignright
+  display: inline
+  float: right
+  margin-left: 1.5em
+
+.center
+
+  width: 200px
+  margin: 0 auto
+  clear: both
+
+
+// vertical align div trick
+.va-outer
+  height: 600px
+  width: auto
+
+.va-middle
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+// spacers
+.space-left
+  margin-left: 8px
+.spacer
+  border-right: solid 1px #bbb
+
+// top margin 50px
+.m-top--50
+  margin-top: 50px
+
+.m-top--0
+  margin-top: 0px
+
+@media (max-width: 770px)
+  .m-top--50
+    margin-top: 0px
+
+
+// txt changes
+.txt-small
+  font-size: 14px
+  line-height: 1.2
+
+.txt-bold
+  font-weight: 700
+
+
+.txt-light
+  color: #aaa
+
+.txt-white
+  color: #fff
+
+.text-highlight
+  color: $accent-color
+
+.text-highlight--blue
+  color: $accent-color-2
+
+// text intro sections
+
+.txt-intro p
+  font-size: 20px
+  line-height: 1.8
+
+.txt-side--r
+  padding-left: 15%
+
+.txt-side--r p
+  font-size: 20px
+  line-height: 1.8
+
+.txt-side--l
+  padding-right: 15%
+
+.txt-side--l p
+  font-size: 20px
+  line-height: 1.7
+
+@media (max-width: 1100px)
+  .txt-side--r
+    padding-left: 9%
+  .txt-side--l
+    padding-right: 9%
+
+@media (max-width: 770px)
+  .txt-side--r
+    padding-left: 0%
+  .txt-side--l
+    padding-right: 0%
+
+@media (max-width: 770px)
+  .mobile-pad
+    padding-top: 20px
+    padding-bottom: 20px
