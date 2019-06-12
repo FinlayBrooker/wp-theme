@@ -1,12 +1,24 @@
 .hex
-	width: $hex-width
+	width: $hex-height
 	height: $hex-height
 	object-fit: contain
 	display: flex
 	align-items: center
 	justify-content: center
-	clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)
-	-webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)
+	border-radius: 50%
+	overflow: hidden
+
+
+@supports (clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%))
+	.hex
+		width: $hex-width
+		height: $hex-height
+		object-fit: contain
+		display: flex
+		align-items: center
+		justify-content: center
+		clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)
+		-webkit-clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)
 
 
 @media (max-width:499px)
@@ -26,5 +38,4 @@
 	margin-bottom: 0
 
 .hex img
-  width: auto
-  margin-top: -25%
+  width: inherit

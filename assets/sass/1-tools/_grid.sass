@@ -3,33 +3,75 @@
   margin-bottom: 100px
   width: auto
   grid-gap: 10px
+  display: -ms-grid
   display: grid
-  grid-template-columns: auto auto
-  grid-template-rows: auto auto
+
   grid-template-areas: "profile" "about" "work"
+
   align-items: center
   justify-content: center
 
+
+.grid-container div
+  margin: 5px
+
+@supports (grid-gap: 10px)
+  .grid-container div
+    margin: 0px
+
+
 .grid-item1
   position: relative
+  -ms-grid-row: 1
+  -ms-grid-column-align: center
+  -ms-grid-row-align: center
   grid-area: profile
 
 .grid-item2
   position: relative
+  -ms-grid-row: 2
+  -ms-grid-column-align: center
+  -ms-grid-row-align: center
   grid-area: about
 
 .grid-item3
   position: relative
+  -ms-grid-row: 3
+  -ms-grid-column-align: center
+  -ms-grid-row-align: center
   grid-area: work
 
 @media (min-width:500px)
   .grid-container
+    -ms-grid-columns: 1fr 1fr
     grid-template-areas: "about profile" "about work"
 
   .grid-left
     left: $hex-width/8
+    -ms-grid-column-align: end
     justify-self: end
 
   .grid-right
     left: $hex-width/-8
+    -ms-grid-column-align: start
     justify-self: start
+
+  .grid-item1
+
+    -ms-grid-row: 1
+    -ms-grid-column: 2
+    grid-area: profile
+
+  .grid-item2
+
+    -ms-grid-row: 1
+    -ms-grid-column: 1
+    -ms-grid-row-span: 2
+    -ms-grid-row-align: center
+    grid-area: about
+
+  .grid-item3
+
+    -ms-grid-row: 2
+    -ms-grid-column: 2
+    grid-area: work
