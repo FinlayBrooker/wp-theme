@@ -5,45 +5,55 @@
   grid-gap: 10px
   display: -ms-grid
   display: grid
-
+  -ms-grid-columns: 1fr
   grid-template-areas: "profile" "about" "work"
 
   align-items: center
   justify-content: center
 
 
-.grid-container div
+.grid-left, .grid-right
   margin: 5px
 
 @supports (grid-gap: 10px)
-  .grid-container div
+  .grid-left, .grid-right
     margin: 0px
 
 
 .grid-item1
   position: relative
+  width: $hex-width
   -ms-grid-row: 1
   -ms-grid-column-align: center
   -ms-grid-row-align: center
   grid-area: profile
+  display: flex
+  align-items: center
 
 .grid-item2
   position: relative
+  width: $hex-width
   -ms-grid-row: 2
   -ms-grid-column-align: center
   -ms-grid-row-align: center
   grid-area: about
+  display: flex
+  align-items: center
 
 .grid-item3
   position: relative
+  width: $hex-width
   -ms-grid-row: 3
   -ms-grid-column-align: center
   -ms-grid-row-align: center
   grid-area: work
+  display: flex
+  align-items: center
 
 @media (min-width:500px)
   .grid-container
     -ms-grid-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr
     grid-template-areas: "about profile" "about work"
 
   .grid-left

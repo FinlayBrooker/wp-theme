@@ -24,16 +24,23 @@ get_header(home);
   <div class="grid-container">
     <div class="grid-item1 grid-right">
       <div class="hex bg-dark">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-pic.jpg" alt="">
+          <div class="hex-bit1 bg-dark"></div>
+          <div class="hex-bit2 bg-dark"></div>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-hex.svg" alt="">
       </div>
     </div>
     <div class="grid-item2 grid-left">
-      <div class="hex bg-light">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+      <div class="hex bg-dark">
+        <div class="hex-bit1 bg-dark"></div>
+        <div class="hex-bit2 bg-dark"></div>
+        <p>My name is Finlay Brooker. I am a coder extraordinaire</p>
       </div>
     </div>
     <div class="grid-item3 grid-right">
       <div class="hex bg-dark">
+        <div class="hex-bit1 bg-dark"></div>
+        <div class="hex-bit2 bg-dark"></div>
+
         <?php
     		if( is_active_sidebar('sidebar-2')): ?>
         <aside class="latest">
