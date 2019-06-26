@@ -20,7 +20,7 @@
 				<div class="row">
 					<div class="center">
 
-					
+
 						 </div>
 
 				</div>
@@ -36,10 +36,17 @@
 
 								 <div class="col col--6-of-12">
 
-									 <p class="txt-white centered">Company <br />
-										 Company Reg No. AA00000 <br /><br />Address <br />
-										Phone
-									</p>
+									 <div class="txt-white centered">
+										 <a href="https://www.facebook.com/profile.php?id=100008379486858">
+											 <i class="fab fa-facebook-square facebook icon"></i>
+											</a>
+											<a href="https://www.linkedin.com/in/finlay-brooker-999309144/">
+												<i class="fab fa-linkedin linkedin icon"></i>
+											</a>
+											<a href="">
+												<i class="fas fa-envelope-square mail icon"></i>
+											</a>
+									</div>
 
 
 							 </div>

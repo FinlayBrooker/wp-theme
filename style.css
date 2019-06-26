@@ -2962,7 +2962,7 @@ social bar icons
 .hex {
   width: 20vw;
   height: 34.64102vw;
-  margin: 0 10vw;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   display: inline-block;
@@ -3153,6 +3153,26 @@ social bar icons
 /* line 81, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/4-modules/_plugin-override.sass */
 .rpwe-clearfix {
   zoom: 1;
+}
+
+/* line 1, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/4-modules/_icons.sass */
+.facebook {
+  color: #3b5998;
+}
+
+/* line 4, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/4-modules/_icons.sass */
+.icon {
+  font-size: 2em;
+}
+
+/* line 7, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/4-modules/_icons.sass */
+.linkedin {
+  color: #0077b5;
+}
+
+/* line 10, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/4-modules/_icons.sass */
+.mail {
+  color: #0bde98;
 }
 
 /*--------------------------------------------------------------
