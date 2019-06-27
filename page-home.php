@@ -22,21 +22,22 @@ get_header(home);
     <p class="sub-lead">Designer || Coder || Cook</p>
   </div>
   <div class="grid-container">
-    <div class="grid-item1 grid-right">
+    <div class="grid-item1 grid-right grid-small">
       <div class="hex bg-dark">
           <div class="hex-bit1 bg-dark"></div>
           <div class="hex-bit2 bg-dark"></div>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-hex.svg" alt="">
       </div>
     </div>
-    <div class="grid-item2 grid-left">
+    <div class="grid-item2 grid-left grid-small">
       <div class="hex bg-dark">
         <div class="hex-bit1 bg-dark"></div>
         <div class="hex-bit2 bg-dark"></div>
         <p>My name is Finlay Brooker. I am a coder extraordinaire</p>
+        <div class="btn--gold">More</div>
       </div>
     </div>
-    <div class="grid-item3 grid-right">
+    <div class="grid-item3 grid-right grid-small">
       <div class="hex bg-dark">
         <div class="hex-bit1 bg-dark"></div>
         <div class="hex-bit2 bg-dark"></div>

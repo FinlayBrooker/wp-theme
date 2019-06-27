@@ -36,7 +36,7 @@
 
 								 <div class="col col--6-of-12">
 
-									 <div class="txt-white centered">
+									 <div class="txt-white centered footer-links">
 										 <a href="https://www.facebook.com/profile.php?id=100008379486858">
 											 <i class="fab fa-facebook-square facebook icon"></i>
 											</a>
