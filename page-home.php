@@ -16,20 +16,20 @@ get_header(home);
 ?>
 
 
-<div class="page-home">
+<div class="page-home wrap-side-sm">
   <div class="lead-section">
     <h1 class="lead">Finlay Dixon Brooker</h1>
     <p class="sub-lead">Designer || Coder || Cook</p>
   </div>
   <div class="grid-container">
-    <div class="grid-item1 grid-right grid-small">
+    <div class="grid-item grid-profile grid-right grid-small">
       <div class="hex bg-dark">
           <div class="hex-bit1 bg-dark"></div>
           <div class="hex-bit2 bg-dark"></div>
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile-hex.svg" alt="">
       </div>
     </div>
-    <div class="grid-item2 grid-left grid-small">
+    <div class="grid-item grid-about grid-left grid-small">
       <div class="hex bg-dark">
         <div class="hex-bit1 bg-dark"></div>
         <div class="hex-bit2 bg-dark"></div>
@@ -37,7 +37,7 @@ get_header(home);
         <div class="btn--gold">More</div>
       </div>
     </div>
-    <div class="grid-item3 grid-right grid-small">
+    <div class="grid-item grid-work grid-right grid-small">
       <div class="hex bg-dark">
         <div class="hex-bit1 bg-dark"></div>
         <div class="hex-bit2 bg-dark"></div>

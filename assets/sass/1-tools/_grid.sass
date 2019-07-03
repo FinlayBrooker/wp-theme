@@ -1,7 +1,7 @@
 .grid-container
   margin-top: 100px
   margin-bottom: 100px
-  width: auto
+  width: 100%
   grid-gap: 10px
   display: -ms-grid
   display: grid
@@ -19,10 +19,13 @@
   .grid-left, .grid-right
     margin: 0px
 
+.grid-item
+  width: 80vw
+  height: ($rootthree/2)*80vw
 
-.grid-item1
-  position: relative
-  width: $hex-width
+
+
+.grid-profile
   -ms-grid-row: 1
   -ms-grid-column-align: center
   -ms-grid-row-align: center
@@ -30,9 +33,7 @@
   display: flex
   align-items: center
 
-.grid-item2
-  position: relative
-  width: $hex-width
+.grid-about
   -ms-grid-row: 2
   -ms-grid-column-align: center
   -ms-grid-row-align: center
@@ -40,9 +41,7 @@
   display: flex
   align-items: center
 
-.grid-item3
-  position: relative
-  width: $hex-width
+.grid-work
   -ms-grid-row: 3
   -ms-grid-column-align: center
   -ms-grid-row-align: center
@@ -52,6 +51,11 @@
 
 
 @media (min-width:500px)
+  .grid-item
+    position: relative
+    width: $hex-width
+    height: $hex-height
+
   .grid-container
     -ms-grid-columns: 1fr 1fr
     grid-template-columns: 1fr 1fr
@@ -67,13 +71,13 @@
     -ms-grid-column-align: start
     justify-self: start
 
-  .grid-item1
+  .grid-profile
 
     -ms-grid-row: 1
     -ms-grid-column: 2
     grid-area: profile
 
-  .grid-item2
+  .grid-about
 
     -ms-grid-row: 1
     -ms-grid-column: 1
@@ -81,7 +85,7 @@
     -ms-grid-row-align: center
     grid-area: about
 
-  .grid-item3
+  .grid-work
 
     -ms-grid-row: 2
     -ms-grid-column: 2

@@ -15,8 +15,9 @@
 
 .lead-section
   padding-top: 10px
-  margin-left: 90px
+  margin-left: 160px
   max-width: 572px
+  font-size: 48px
 
 h1.lead
   margin-top: 12px
@@ -25,15 +26,29 @@ h1.lead
 
 .sub-lead
   text-align: right
+  font-size: 0.5em
 
 .site-title, .site-description
   display: none
 
+@media (max-width: 730px)
+  h1.lead
+    font-size: 0.9em
+  .sub-lead
+    font-size: 0.4em
+
 
 /* larger than tablet - with hamburger icon off and larger logo */
 
-@media (max-width: 640px)
+@media (max-width: 500px)
+  .lead-section
+    margin-left: 120px
+  h1.lead
+    font-size: 0.5em
+  .sub-lead
+    font-size: 0.3em
   .site-branding
     width: 120px
     padding-top: 0px
     padding-left: 0px
+    top: 37px
