@@ -1236,7 +1236,7 @@ h1, h2, h3, h5, h6 {
 
 /* line 7, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_headings.sass */
 h1 {
-  font-size: 48px;
+  font-size: 54px;
   line-height: 1.25;
   letter-spacing: 0.2px;
   margin-bottom: 0.4em;
@@ -1245,7 +1245,7 @@ h1 {
 
 /* line 14, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_headings.sass */
 h2 {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1.3;
   margin-bottom: 0.4em;
   font-weight: 500;
@@ -1289,9 +1289,6 @@ html {
   /* Adjust font size */
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
-  /* Font varient */
-  font-variant-ligatures: none;
-  -webkit-font-variant-ligatures: none;
   /* Smoothing */
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
@@ -1300,7 +1297,7 @@ html {
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
-/* line 25, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 23, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 *,
 *:before,
 *:after {
@@ -1310,41 +1307,41 @@ html {
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 34, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 32, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 ul, ol {
   margin: 20px 0px;
 }
 
-/* line 38, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 36, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 ul {
   list-style: none;
 }
 
-/* line 43, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 41, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 48, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 46, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 li > ul,
 li > ol {
   margin-bottom: 0px;
   margin-left: 0px;
 }
 
-/* line 54, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 52, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 58, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 56, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 dd {
   margin: 0 1.5em 1.5em;
 }
 
 /* Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 66, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 64, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -1367,7 +1364,7 @@ select {
 }
 
 /* Removes awkward default styles on some inputs for iOS */
-/* line 85, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 83, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -1381,14 +1378,14 @@ textarea {
   appearance: none;
 }
 
-/* line 96, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 94, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 textarea {
   min-height: 200px;
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-/* line 100, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 98, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -1402,7 +1399,7 @@ select:focus {
   outline: 0;
 }
 
-/* line 111, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 109, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 label,
 legend {
   display: block;
@@ -1410,19 +1407,19 @@ legend {
   font-weight: 600;
 }
 
-/* line 116, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 114, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 fieldset {
   padding: 0;
   border-width: 0;
 }
 
-/* line 119, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 117, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
 }
 
-/* line 122, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 120, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
@@ -1431,27 +1428,27 @@ label > .label-body {
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 129, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 127, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 table {
   margin: 0 0 1.5em;
   width: 100%;
   border-radius: 4px;
 }
 
-/* line 135, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 133, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 th,
 td {
   padding: 12px 15px;
   text-align: left;
 }
 
-/* line 139, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 137, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 th:first-child,
 td:first-child {
   padding-left: 12px;
 }
 
-/* line 142, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 140, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 th:last-child,
 td:last-child {
   padding-right: 12px;
@@ -1459,7 +1456,7 @@ td:last-child {
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* line 150, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
+/* line 148, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_elements.scss */
 input,
 textarea,
 select,
@@ -1484,31 +1481,41 @@ p {
   color: #585757;
   font-size: 17px;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.3;
   margin-top: 0px;
 }
 
 /* line 12, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+.font--s {
+  font-size: 12px;
+}
+
+/* line 15, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+.font--l {
+  color: #aaa;
+}
+
+/* line 18, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 15, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 21, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 dfn, cite, em, i {
   font-style: italic;
 }
 
-/* line 18, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 24, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 blockquote, q {
   quotes: "" "";
 }
 
-/* line 20, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 26, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* line 24, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 30, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 blockquote, q {
   font-family: "Raleway", "Helvetica", sans-serif;
   quotes: "" "";
@@ -1520,7 +1527,7 @@ blockquote, q {
   margin-left: 1em;
 }
 
-/* line 36, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 42, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 .drop-cap {
   float: left;
   color: #968D74;
@@ -1532,7 +1539,7 @@ blockquote, q {
   font-family: Georgia;
 }
 
-/* line 46, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 52, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 .drop-cap-2 {
   float: left;
   color: #968D74;
@@ -1544,12 +1551,12 @@ blockquote, q {
   font-family: "Baskerville Old Face", "Baskerville", Georgia;
 }
 
-/* line 56, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 62, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 address {
   margin: 0 0 1.5em;
 }
 
-/* line 59, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 65, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
@@ -1562,19 +1569,19 @@ pre {
   padding: 1.6em;
 }
 
-/* line 69, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 75, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 code, kbd, tt, var {
   color: #15d45e;
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-/* line 74, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 80, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 abbr, acronym {
   border-bottom: 1px dotted #666;
   cursor: help;
 }
 
-/* line 78, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
+/* line 84, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/2-base/_copy.sass */
 mark, ins {
   background: #fff9c0;
   text-decoration: none;
@@ -1885,21 +1892,43 @@ h1.lead {
   }
 }
 
-/* larger than tablet - with hamburger icon off and larger logo */
-@media (max-width: 500px) {
-  /* line 44, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
-  .lead-section {
-    margin-left: 120px;
-  }
-  /* line 46, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+@media (max-width: 680px) {
+  /* line 41, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
   h1.lead {
-    font-size: 0.5em;
+    font-size: 0.7em;
   }
-  /* line 48, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+  /* line 43, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+  .sub-lead {
+    font-size: 0.4em;
+  }
+}
+
+@media (max-width: 580px) {
+  /* line 47, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+  h1.lead {
+    font-size: 0.6em;
+  }
+  /* line 49, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
   .sub-lead {
     font-size: 0.3em;
   }
-  /* line 50, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+}
+
+/* larger than tablet - with hamburger icon off and larger logo */
+@media (max-width: 500px) {
+  /* line 55, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+  .lead-section {
+    margin-left: 120px;
+  }
+  /* line 57, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+  h1.lead {
+    font-size: 0.5em;
+  }
+  /* line 59, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+  .sub-lead {
+    font-size: 0.3em;
+  }
+  /* line 61, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
   .site-branding {
     width: 120px;
     padding-top: 0px;
@@ -2235,31 +2264,30 @@ h1.lead {
 }
 
 /* line 26, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
-.post,
-.page {
+.post {
   margin: 0 0 1.5em;
 }
 
-/* line 30, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
+/* line 29, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
 .byline,
 .updated:not(.published) {
   display: none;
 }
 
-/* line 35, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
+/* line 34, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
 .single .byline,
 .group-blog .byline {
   display: inline;
 }
 
-/* line 40, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
+/* line 39, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 0.3em 0 0;
 }
 
-/* line 46, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
+/* line 45, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-posts-pages.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -3255,54 +3283,40 @@ social bar icons
   margin: 0 auto;
 }
 
-/* line 35, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
-time {
-  font-weight: 400;
-  padding-left: 4px;
-  color: #8900fa;
-  font-size: 16px;
-}
-
-/* line 42, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
-.fa-clock {
-  font-size: 15px;
-  color: #8900fa;
-}
-
-/* line 46, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 37, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 header.entry-header {
   margin: 0 auto;
   max-width: 800px;
 }
 
-/* line 56, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 47, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 header.entry-header.archive time {
   padding-left: 4px;
   color: #8900fa;
   font-size: 16px;
 }
 
-/* line 61, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 52, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 header.entry-header.archive .fa-clock {
   font-size: 15px;
   color: #8900fa;
 }
 
-/* line 68, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 59, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 h4.t-a {
   color: #fff;
   font-size: 26px;
   font-weight: 500;
 }
 
-/* line 74, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 65, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 h4 .t-a-pipe {
   color: #eee;
   font-size: 26px;
   font-weight: 300;
 }
 
-/* line 80, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 71, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 h4 .t-f {
   color: #eee;
   font-size: 26px;
@@ -3310,27 +3324,27 @@ h4 .t-f {
   font-style: italic;
 }
 
-/* line 86, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 77, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 p.testimonial, p.quotation {
   font-size: 24px;
   font-weight: 300;
   padding-top: 35px;
 }
 
-/* line 93, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 84, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 .q-a {
   font-size: 26px;
   font-weight: 500;
 }
 
-/* line 97, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 88, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 .q-a-pipe {
   color: #ccc;
   font-size: 26px;
   font-weight: 500;
 }
 
-/* line 102, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
+/* line 93, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-general.sass */
 .q-f {
   color: #fff;
   font-size: 26px;
@@ -3480,6 +3494,91 @@ label {
 /* line 1, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-footer.sass */
 .footer-links {
   padding: 20px;
+}
+
+/* line 1, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.post-image-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 6, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.text-cover {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 40%;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 54px;
+}
+
+/* line 18, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.single-work-post h1.entry-title {
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  /* line 24, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+  .single-work-post h1.entry-title {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 400px) {
+  /* line 28, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+  .single-work-post h1.entry-title {
+    font-size: 0.6em;
+  }
+}
+
+/* line 31, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.post-thumbnail {
+  width: 100%;
+}
+
+/* line 34, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.post-thumbnail img {
+  margin: 0 auto;
+  display: block;
+  z-index: -1;
+}
+
+/* line 39, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.cat-links {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+/* line 43, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.cat-links a {
+  color: #8900fa;
+}
+
+/* line 46, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+time {
+  font-weight: 400;
+  padding-left: 4px;
+  color: #8900fa;
+  font-size: 16px;
+}
+
+/* line 53, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.fa-clock {
+  font-size: 15px;
+  color: #8900fa;
+}
+
+/* line 57, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-post.sass */
+.single-work-post .container {
+  padding-top: 20px;
+  max-width: 800px;
 }
 
 /*# sourceMappingURL=style.css.map */

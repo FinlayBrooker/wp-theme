@@ -34,7 +34,7 @@ if ( ! function_exists( 'yellowtractor_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
-
+		add_theme_support( 'post-thumbnails' );
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
@@ -198,29 +198,24 @@ function _ie9_scripts() {
  /**
   * Enqueue external google fonts
   */
+	add_action( 'wp_enqueue_scripts', 'wpse217390_enqueue_google_fonts' );
+	 	function wpse217390_enqueue_google_fonts() {
 
- 	add_action( 'wp_enqueue_scripts', 'wpse217390_enqueue_google_fonts' );
- 	function wpse217390_enqueue_google_fonts() {
 
- 	 $query_args = array(
- 	   'family' => 'Oxygen:400,700'
+		 $query_args = array(
+	 	   'family' => 'Raleway|Oxygen:300,400,700'
 
- 	 );
-	 $query_args = array(
- 	   'family' => 'Raleway:300,400,700'
+	 	 );
+		 
+	 	 wp_register_style(
+	 	   'google-fonts',
+	 	   add_query_arg( $query_args, '//fonts.googleapis.com/css' ),
+	 	   array(),
+	 	   null
+	 	 );
+	 	 wp_enqueue_style( 'google-fonts' );
 
- 	 );
-
- 	 wp_register_style(
- 	   'google-fonts',
- 	   add_query_arg( $query_args, '//fonts.googleapis.com/css' ),
- 	   array(),
- 	   null
- 	 );
- 	 wp_enqueue_style( 'google-fonts' );
-
- 	}
-
+	 	}
 
 
 
