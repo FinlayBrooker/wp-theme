@@ -41,7 +41,7 @@ if ( ! function_exists( 'yellowtractor_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		// add_theme_support( 'post-thumbnails' );
-
+		add_image_size('hex-thumb', 173,150,true);
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'yellowtractor' ),
@@ -206,7 +206,7 @@ function _ie9_scripts() {
 	 	   'family' => 'Raleway|Oxygen:300,400,700'
 
 	 	 );
-		 
+
 	 	 wp_register_style(
 	 	   'google-fonts',
 	 	   add_query_arg( $query_args, '//fonts.googleapis.com/css' ),

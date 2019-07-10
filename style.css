@@ -1937,6 +1937,16 @@ h1.lead {
   }
 }
 
+@media (max-width: 450px) {
+  /* line 68, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-branding.sass */
+  .site-branding {
+    width: 80px;
+    padding-top: 0px;
+    padding-left: 0px;
+    top: 37px;
+  }
+}
+
 /* line 1, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/3-wp/_wp-structure.sass */
 .site-header {
   z-index: 3;
@@ -3579,6 +3589,65 @@ time {
 .single-work-post .container {
   padding-top: 20px;
   max-width: 800px;
+}
+
+/* line 1, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+.left-thumb a {
+  float: left;
+  margin-right: 15px;
+}
+
+/* line 5, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+.right-thumb a {
+  float: right;
+  margin-left: 15px;
+}
+
+/* line 9, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+.post-title {
+  text-align: center;
+}
+
+/* line 12, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+.entry-content h2 {
+  display: inline;
+}
+
+/* line 15, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+.spacer {
+  height: 85px;
+  font-size: 48px;
+}
+
+/* line 19, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+.page-archive a {
+  color: #8900fa;
+}
+
+/* line 22, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+.spacer h1 {
+  text-align: center;
+}
+
+@media (max-width: 730px) {
+  /* line 26, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+  .spacer h1 {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 31, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+  .spacer h1 {
+    font-size: 0.7em;
+  }
+}
+
+@media (max-width: 580px) {
+  /* line 36, ../../../../MAMP/htdocs/FB/wp-content/themes/yellowtractor-master/assets/sass/5-pages/_page-work.sass */
+  .spacer h1 {
+    font-size: 0.6em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -73,24 +73,24 @@ if ( ! function_exists( 'yellowtractor_entry_footer' ) ) :
 			}
 		}
 
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
-			comments_popup_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'yellowtractor' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				)
-			);
-			echo '</span>';
-		}
+		//if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+		//	echo '<span class="comments-link">';
+		//	comments_popup_link(
+		//		sprintf(
+		//			wp_kses(
+		//				/* translators: %s: post title */
+		//				__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'yellowtractor' ),
+		//				array(
+		//					'span' => array(
+		//						'class' => array(),
+		//					),
+		//				)
+		//			),
+		//			get_the_title()
+		//		)
+		//	);
+		//	echo '</span>';
+		//}
 
 		edit_post_link(
 			sprintf(
@@ -143,6 +143,63 @@ if ( ! function_exists( 'yellowtractor_post_thumbnail' ) ) :
 		</a>
 
 		<?php
+		endif; // End is_singular().
+	}
+endif;
+
+if ( ! function_exists( 'fins_small_post_thumbnail' ) ) :
+	/**
+	 * Displays an optional post thumbnail.
+	 *
+	 * Wraps the post thumbnail in an anchor element on index views, or a div
+	 * element when on single views.
+	 */
+	function fins_small_post_thumbnail() {
+		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
+			return;
+		}
+
+		if ( is_singular() ) :
+			?>
+
+			<div class="thumbnail">
+				<?php the_post_thumbnail('hex-thumb');?>
+			</div><!-- .post-thumbnail -->
+
+		<?php else : ?>
+
+		<a class="thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+			<?php
+			//the_post_thumbnail( 'thumbnail', array(
+			//	'alt' => the_title_attribute( array(
+			//		'echo' => false,
+			//	) ),
+			//) );
+			//get the url for the featured image
+			$url = get_the_post_thumbnail_url(null, 'hex-thumb');
+			//separate the / parts
+			$path_parts = explode('/', $url);
+			$i = count($path_parts)-1;
+			// find the last entry and add hex- to the file name
+			$path_parts[$i] = 'hex-'.$path_parts[$i];
+			// change file type to png
+			$path_parts[$i] = str_replace('.jpg','.png',$path_parts[$i]);
+			// reforge url
+			$new_url=join('/',$path_parts);?>
+			<img src="<?php echo $new_url?>"
+			class="attachment-thumbnail size-hex-thumb wp-post-image"
+			alt="<?php the_title_attribute( array(
+					'echo' => false,
+				) )?>"
+			srcset="<?php echo $new_url?> 150w,
+			<?php echo $new_url?> 45w"
+			sizes="(max-width: 173px) 100vw, 150px"
+			width="173" height="150">
+
+		</a>
+
+		<?php
+
 		endif; // End is_singular().
 	}
 endif;
