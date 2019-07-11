@@ -62,6 +62,18 @@ if ( ! function_exists( 'yellowtractor_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'yellowtractor' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
+				//var_dump($categories_list);
+				$categories_list2=str_replace(' ', '',strip_tags($categories_list));
+				//var_dump($categories_list2);
+				$cat_array = explode(',', $categories_list2);
+				//var_dump($cat_array);
+				$size = count($cat_array);
+
+				for($i=0;$i<$size;$i++){
+					$categories_list = str_replace('>'.$cat_array[$i],'class="category-'.strtolower($cat_array[$i]).'">'.$cat_array[$i],$categories_list);
+
+				}
+
 				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'yellowtractor' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 

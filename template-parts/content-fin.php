@@ -40,7 +40,7 @@
 		?>
 		<i class="far fa-clock" aria-hidden="true"></i>
 		<time class="font--s font--l"><?php echo meks_time_ago(); ?> </time>
-		<span class="cat-links"><?php the_category( ' ' ); ?></span>
+		<span class="cat-links"><?php the_category(' '); ?></span>
 	</div><!-- .entry-meta -->
 
 	<div class="entry-content">

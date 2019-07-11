@@ -41,7 +41,7 @@ if ( ! function_exists( 'yellowtractor_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		// add_theme_support( 'post-thumbnails' );
-		add_image_size('hex-thumb', 173,150,true);
+		add_image_size('hex-thumb', 173,150,tr);
 		// This theme uses wp_nav_menu() in two locations.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'yellowtractor' ),
@@ -245,4 +245,20 @@ function custom_excerpt_length( $length ) {
 /* Function which displays your post date in time ago format */
 function meks_time_ago() {
 	return human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ).' '.__( 'ago' );
+}
+
+add_filter('wp_list_categories', 'add_slug_class_wp_list_categories');
+function add_slug_class_wp_list_categories($list) {
+
+    $cats = get_categories('hide_empty=0');
+    foreach($cats as $cat) {
+        $find = 'cat-links' . $cat->term_id . '"';
+        $replace = 'cat-links' . $cat->slug . ' cat-links' . $cat->term_id . '"';
+        $list = str_replace( $find, $replace, $list );
+        $find = 'cat-links' . $cat->term_id . ' ';
+        $replace = 'cat-links' . $cat->slug . ' cat-links' . $cat->term_id . ' ';
+        $list = str_replace( $find, $replace, $list );
+    }
+
+    return $list;
 }

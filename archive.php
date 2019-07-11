@@ -20,7 +20,7 @@ get_header(); ?>
 
     							<header class="page-header">
     								<?php
-    									the_archive_title( '<h1 class="page-title">', '</h1>' );
+    									echo '<h1 class="page-title">'.str_replace('Category: ','',get_the_archive_title().'</h1>');
     									the_archive_description( '<span class="text-highlight">', '</span>' );
     								?>
     							</header><!-- .page-header -->

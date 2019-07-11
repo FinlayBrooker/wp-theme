@@ -26,6 +26,7 @@ function yellowtractor_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'yellowtractor_body_classes' );
 
+
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
