@@ -13,28 +13,23 @@ get_header();
 <div id="primary" class="content-area">
  <main id="main" class="site-main">
   <section class="error-404 not-found">
-			<div class="banner-red">
-		  <div class="projectLead">
-		   <div class="centerParent">
-			  <div class="centerChild">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! wandered off a bit...', 'yellowtractor' ); ?></h1>
-				</header><!-- .page-header -->
-			  </div>
-	     </div>
-      </div>
-     </div>
+
       <div class="wrap page-content wrap--med">
-		    <div class="container width-800 p-bot-50">
-			    <div class="row">
-
-					     <h3><?php esc_html_e( 'Why not try one of the links above or a search?', 'yellowtractor' ); ?></h3>
-
-					     <?php
-						   get_search_form();
-				    	 ?>
-
+		    <div class="hex-container">
+          <div class="hex bg-dark">
+            <div class="display-404">
+            <h1 class="title-404">404</h1>
+            <p class="message-404">Something has gone wrong here, the page you are trying to find does not exsits.</p>
+            <p class="message-404">Try finding your way back home.</p>
           </div>
+            <div class="nav-404">
+              <a class="link-home" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                <div class="btn--green">Take me home</div>
+              </a>
+          </div>
+            <div class="hex-bit1 bg-dark"></div>
+            <div class="hex-bit2 bg-dark"></div></div>
+
          </div>
 				</div><!-- .page-content -->
 		</section><!-- .error-404 -->

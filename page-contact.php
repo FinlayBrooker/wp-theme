@@ -15,17 +15,26 @@
 
 get_header(); ?>
 <div class="page-contact">
-     <div class="wrap">
+     <!--div class="wrap">
 		 <div class="banner-contact">
 <iframe class="top-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2164.800911311418!2d-2.0972242840151223!3d57.1404656809472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48840e3a061c3c99%3A0x4fbdc8c531bc8633!2sAdmiral+Court%2C+Poynernook+Rd%2C+Aberdeen+AB11+5QX!5e0!3m2!1sen!2suk!4v1535642625524" frameborder="0" style="border:0" allowfullscreen></iframe>
 		 </div>
-	 </div>
+	 </div-->
 
    <div class="wrap wrap--x-sm">
      <div class="container">
-       <div class="row">
-           <div class="col col--7-of-12">
-             <div class="intro txt-side--l">
+       <div class="contact-wrap">
+               <div class="hex-container">
+                 <div class="hex bg-dark">
+                   <div class="contact-container">
+                     <?php
+                 		if( is_active_sidebar('sidebar-3')): ?>
+                     <aside class="contact">
+                       <?php dynamic_sidebar('sidebar-3');?>
+                 		<?php endif;?>
+                 </div>
+                   <div class="hex-bit1 bg-dark"></div>
+                   <div class="hex-bit2 bg-dark"></div></div>
                <h1>Get in Touch</h1>
 
 
@@ -40,7 +49,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="col col--5-of-12">
+        <!--div class="col col--5-of-12">
           <div class="sidebar-menu">
             <img src="">
 
@@ -74,11 +83,10 @@ get_header(); ?>
 
             </div>
           </div>
-        </div>
+        </div-->
 
 
-     </div>
-   </div>
+</div>
     </div>
 
   </div>

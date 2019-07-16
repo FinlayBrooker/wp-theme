@@ -40,7 +40,21 @@
 		?>
 		<i class="far fa-clock" aria-hidden="true"></i>
 		<time class="font--s font--l"><?php echo meks_time_ago(); ?> </time>
-		<span class="cat-links"><?php the_category(' '); ?></span>
+		<span class="cat-links">
+			<?php //the_category(' ');
+			//$cat_ID;
+			$categories = get_the_category();
+  		$separator = ' , ';
+  		$output = '';
+  		if($categories){
+    		foreach($categories as $category) {
+        		$rl_category_color = rl_color($category->cat_ID);
+       		 $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ).'"class="category-'.$category->slug .'">'.$category->cat_name.'</a>'.$separator;//. '" style="color:'.$rl_category_color
+    		}
+    	echo trim($output, $separator);
+		}
+			 ?>
+		</span>
 	</div><!-- .entry-meta -->
 
 	<div class="entry-content">

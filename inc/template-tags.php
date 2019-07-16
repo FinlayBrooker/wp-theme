@@ -59,23 +59,35 @@ if ( ! function_exists( 'yellowtractor_entry_footer' ) ) :
 		// Hide category and tag text for pages.
 		if ( 'post' === get_post_type() ) {
 			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'yellowtractor' ) );
-			if ( $categories_list ) {
+			//$categories_list = get_the_category_list( esc_html__( ', ', 'yellowtractor' ) );
+			//if ( $categories_list ) {
 				/* translators: 1: list of categories. */
 				//var_dump($categories_list);
-				$categories_list2=str_replace(' ', '',strip_tags($categories_list));
+				//$categories_list2=str_replace(' ', '',strip_tags($categories_list));
 				//var_dump($categories_list2);
-				$cat_array = explode(',', $categories_list2);
+				//$cat_array = explode(',', $categories_list2);
 				//var_dump($cat_array);
-				$size = count($cat_array);
+				//$size = count($cat_array);
 
-				for($i=0;$i<$size;$i++){
-					$categories_list = str_replace('>'.$cat_array[$i],'class="category-'.strtolower($cat_array[$i]).'">'.$cat_array[$i],$categories_list);
+				//for($i=0;$i<$size;$i++){
+				//	$categories_list = str_replace('>'.$cat_array[$i],'class="category-'.strtolower($cat_array[$i]).'">'.$cat_array[$i],$categories_list);
 
-				}
+				//}
 
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'yellowtractor' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-			}
+				//printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'yellowtractor' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			//}
+			?><span class="cat-links"> Posted in <?php
+			$categories = get_the_category();
+  		$separator = ' , ';
+  		$output = '';
+  		if($categories){
+    		foreach($categories as $category) {
+        		$rl_category_color = rl_color($category->cat_ID);
+        		$output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ).'"class="category-'.$category->slug .'">'.$category->cat_name.'</a>'.$separator;//. '" style="color:'.$rl_category_color
+    		}
+    	echo trim($output, $separator);
+		}?></span>
+		<?php
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'yellowtractor' ) );

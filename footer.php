@@ -44,7 +44,7 @@
 											<a href="https://www.linkedin.com/in/finlay-brooker-999309144/">
 												<i class="fab fa-linkedin linkedin icon"></i>
 											</a>
-											<a href="">
+											<a href="<?php echo get_permalink( get_page_by_title( 'Contact' ) )?>">
 												<i class="fas fa-envelope-square mail icon"></i>
 											</a>
 									</div>
