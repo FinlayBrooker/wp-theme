@@ -83,7 +83,7 @@ if ( ! function_exists( 'yellowtractor_entry_footer' ) ) :
   		if($categories){
     		foreach($categories as $category) {
         		$rl_category_color = rl_color($category->cat_ID);
-        		$output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ).'"class="category-'.$category->slug .'">'.$category->cat_name.'</a>'.$separator;//. '" style="color:'.$rl_category_color
+        		$output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ).'"class="category-fin-'.$category->slug .'">'.$category->cat_name.'</a>'.$separator;//. '" style="color:'.$rl_category_color
     		}
     	echo trim($output, $separator);
 		}?></span>
@@ -183,14 +183,7 @@ if ( ! function_exists( 'fins_small_post_thumbnail' ) ) :
 			return;
 		}
 
-		if ( is_singular() ) :
-			?>
-
-			<div class="thumbnail">
-				<?php the_post_thumbnail('hex-thumb');?>
-			</div><!-- .post-thumbnail -->
-
-		<?php else : ?>
+		?>
 
 		<a class="thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 			<?php
@@ -224,6 +217,6 @@ if ( ! function_exists( 'fins_small_post_thumbnail' ) ) :
 
 		<?php
 
-		endif; // End is_singular().
+		//endif; // End is_singular().
 	}
 endif;

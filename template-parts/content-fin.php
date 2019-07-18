@@ -10,7 +10,14 @@
 ?>
 <div class="single-work-post">
 <div class="post-image-wrap">
-	<?php yellowtractor_post_thumbnail(); ?>
+	<?php if ( has_post_thumbnail() ) {
+		yellowtractor_post_thumbnail();
+	}
+	else { ?>
+		<img src="<?php bloginfo('template_directory'); ?>/assets/img/clement-default-unsplash.jpg" alt="<?php the_title(); ?>" />
+	<?php
+	} ?>
+
 	<div class="text-cover">
 	<?php if ( is_singular() ) :
 		the_title( '<h1 class="entry-title">', '</h1>' );
@@ -49,7 +56,7 @@
   		if($categories){
     		foreach($categories as $category) {
         		$rl_category_color = rl_color($category->cat_ID);
-       		 $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ).'"class="category-'.$category->slug .'">'.$category->cat_name.'</a>'.$separator;//. '" style="color:'.$rl_category_color
+       		 $output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ).'"class="category-fin-'.$category->slug .'">'.$category->cat_name.'</a>'.$separator;//. '" style="color:'.$rl_category_color
     		}
     	echo trim($output, $separator);
 		}

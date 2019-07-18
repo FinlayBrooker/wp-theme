@@ -256,18 +256,75 @@ function meks_time_ago() {
 	return human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ).' '.__( 'ago' );
 }
 
-add_filter('wp_list_categories', 'add_slug_class_wp_list_categories');
-function add_slug_class_wp_list_categories($list) {
+function get_fin_post_navigation( $args = array() ) {
 
-    $cats = get_categories('hide_empty=0');
-    foreach($cats as $cat) {
-        $find = 'cat-links' . $cat->term_id . '"';
-        $replace = 'cat-links' . $cat->slug . ' cat-links' . $cat->term_id . '"';
-        $list = str_replace( $find, $replace, $list );
-        $find = 'cat-links' . $cat->term_id . ' ';
-        $replace = 'cat-links' . $cat->slug . ' cat-links' . $cat->term_id . ' ';
-        $list = str_replace( $find, $replace, $list );
-    }
+					<div id="post-nav" class="row">
 
-    return $list;
+
+											    <?php $nextPost = get_next_post();
+
+											        if($nextPost) {
+											            $args = array(
+											                'posts_per_page' => 1,
+											                'include' => $nextPost->ID
+
+
+											            );
+											            $nextPost = get_posts($args);
+											            foreach ($nextPost as $post) {
+											                setup_postdata($post);
+											    ?>
+				        <div class="col col--6-of-12">
+									<div class="post-previous box">
+											 <a href="<?php the_permalink(); ?>"><div class="box-1">
+
+
+												 <?php if ( has_post_thumbnail() ) {
+												 the_post_thumbnail('paul-thumb');
+												 } else { ?>
+												 <img src="<?php bloginfo('template_directory'); ?>/assets/img/card-img-1.jpg" alt="<?php the_title(); ?>" />
+												 <?php } ?>
+
+											 </a>
+				            <a class="previous" href="<?php the_permalink(); ?>">&laquo; Previous Post</a>
+
+
+										  <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+				            <small><?php echo meks_time_ago(); ?></small>
+									</div>
+									</div>
+				        </div>
+				    <?php
+				                wp_reset_postdata();
+				            } //end foreach
+				        } // end if
+
+												        $prevPost = get_previous_post();
+
+												        if($prevPost) {
+												            $args = array(
+												                'posts_per_page' => 1,
+												                'include' => $prevPost->ID
+
+												            );
+												            $prevPost = get_posts($args);
+												            foreach ($prevPost as $post) {
+												                setup_postdata($post);
+												    ?>
+				        <div class="col col--6-of-12">
+									<div class="post-next box">
+
+
+				            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail'); ?></a><div class="box-2">
+												 <a class="next" href="<?php the_permalink(); ?>">Next Post &raquo;</a>
+										<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+				            <small><?php echo meks_time_ago(); ?></strong>
+										</box>
+										</div>
+				        </div>
+				    <?php
+				                wp_reset_postdata();
+				            } //end foreach
+				        } // end if
+
 }

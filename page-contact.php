@@ -24,6 +24,7 @@ get_header(); ?>
    <div class="wrap wrap--x-sm">
      <div class="container">
        <div class="contact-wrap">
+         <h1>Get in Touch</h1>
                <div class="hex-container">
                  <div class="hex bg-dark">
                    <div class="contact-container">
@@ -35,7 +36,7 @@ get_header(); ?>
                  </div>
                    <div class="hex-bit1 bg-dark"></div>
                    <div class="hex-bit2 bg-dark"></div></div>
-               <h1>Get in Touch</h1>
+
 
 
 
