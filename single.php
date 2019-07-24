@@ -23,7 +23,7 @@ get_header();
 
 			?>
 			<div id="post-nav" class="row container">
-				<div class="col col--6-of-12">
+				<div class="post-nav-grid">
 				<?php $nextPost = get_next_post();
 
 				if($nextPost) {
@@ -37,34 +37,30 @@ get_header();
 				foreach ($nextPost as $post) {
 				setup_postdata($post);
 			?>
+			<div class="post-next box">
+				<div class="box-wrap">
+					<div class="thumb-wrap">
+			<a class="thumbnail" href="<?php the_permalink(); ?>">
+				<?php if ( has_post_thumbnail() ) {
+				fins_small_post_thumbnail();
+				} else { ?>
+				<img src="<?php bloginfo('template_directory'); ?>/assets/img/hex-clement-default-unsplash-173x150.png" alt="<?php the_title(); ?>" />
+			<?php } ?></a></div>
+				<div class="box-2">
 
-				<div class="post-previous box">
-					<div class="box-wrap">
-					<a href="<?php the_permalink(); ?>">
-
-							<?php if ( has_post_thumbnail() ) {
-							fins_small_post_thumbnail();
-							} else { ?>
-							<img src="<?php bloginfo('template_directory'); ?>/assets/img/hex-clement-default-unsplash-173x150.png" alt="<?php the_title(); ?>" />
-							<?php } ?>
-
-							</a>
-								<div class="box-1">
-						<!--a class="previous" href="<?php //the_permalink(); ?>">&laquo; Previous Post</a-->
-
-						<h4><a href="<?php the_permalink(); ?>"><?php ?>&laquo;<?php the_title(); ?></a></h4>
-						<small><?php echo meks_time_ago(); ?></small>
-					</div>
+					<h4><a href="<?php the_permalink(); ?>"><?php the_title();?>&raquo;</a></h4>
+					<small><?php echo meks_time_ago(); ?></small>
 				</div>
 			</div>
+			</div>
+
 
 			<?php
 			wp_reset_postdata();
 			} //end foreach
 			} // end if
 		//endif;?>
-			</div>
-			<div class="col col--6-of-12">
+
 			<?php
 
 			$prevPost = get_previous_post();
@@ -78,18 +74,21 @@ get_header();
 				setup_postdata($post);
 				?>
 
-				<div class="post-next box">
+				<div class="post-previous box">
 					<div class="box-wrap">
-				<a href="<?php the_permalink(); ?>">
-					<?php if ( has_post_thumbnail() ) {
-					fins_small_post_thumbnail();
-					} else { ?>
-					<img src="<?php bloginfo('template_directory'); ?>/assets/img/hex-clement-default-unsplash-173x150.png" alt="<?php the_title(); ?>" />
-					<?php } ?></a>
-					<div class="box-2">
-						<!--a class="next" href="<?php //the_permalink(); ?>">Next Post &raquo;</a-->
-						<h4><a href="<?php the_permalink(); ?>"><?php the_title();?>&raquo;</a></h4>
-						<small><?php echo meks_time_ago(); ?></strong>
+						<div class="thumb-wrap">
+							<a class="thumbnail" href="<?php the_permalink(); ?>">
+								<?php if ( has_post_thumbnail() ) {
+								fins_small_post_thumbnail();
+								} else { ?>
+								<img src="<?php bloginfo('template_directory'); ?>/assets/img/hex-clement-default-unsplash-173x150.png" alt="<?php the_title(); ?>" />
+							<?php } ?></a>
+						</div>
+								<div class="box-1">
+
+
+						<h4><a href="<?php the_permalink(); ?>"><?php ?>&laquo;<?php the_title(); ?></a></h4>
+						<small><?php echo meks_time_ago(); ?></small>
 					</div>
 				</div>
 			</div>

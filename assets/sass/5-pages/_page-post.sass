@@ -58,24 +58,98 @@ time
   padding-top: 20px
   max-width: 800px
 
-.post-previous img
-  float: left
-  margin-right: 20px
 
-.post-next img
-  float: right
-  margin-left: 20px
 
 #post-nav .col
 
 
-.post-previous
-  float: left
+
+.post-nav-grid
+  width: 100%
+  grid-gap: 10px
+  display: -ms-grid
+  display: grid
+  -ms-grid-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr
+  grid-template-areas: "previous next"
+
+  align-items: center
+
+
 .post-next
+  margin-left: 5px
+.post-previous
+  margin-right: 5px
+
+@supports (grid-gap: 10px)
+  .post-previous, .post-next
+    margin-left: 0px
+    margin-right: 0px
+
+
+.post-previous
+  grid-area: previous
+  -ms-grid-row: 1
+  -ms-grid-column: 1
+  -ms-grid-row-span: 1
+  -ms-grid-row-align: center
+
+.post-next
+  grid-area: next
+  -ms-grid-row: 1
+  -ms-grid-column: 2
+  -ms-grid-row-span: 1
+  -ms-grid-row-align: center
+
+
+@media(max-width:600px)
+  .post-nav-grid
+    width: 100%
+    grid-gap: 10px
+    display: -ms-grid
+    display: grid
+    -ms-grid-columns: 1fr
+    grid-template-columns: 1fr
+    grid-template-areas: "previous" "next"
+
+    align-items: center
+
+  .post-previous
+    grid-area: previous
+    -ms-grid-row: 1
+    -ms-grid-column: 1
+    -ms-grid-row-span: 1
+    -ms-grid-row-align: center
+
+  .post-next
+    grid-area: next
+    -ms-grid-row: 2
+    -ms-grid-column: 1
+    -ms-grid-row-span: 1
+    -ms-grid-row-align: center
+
+
+.thumb-wrap
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 50%
+  height: inherit
+
+.post-previous .thumb-wrap
+  float: left
+
+.post-next .thumb-wrap
   float: right
 
+.post-previous img, .post-next img
+  width: 100%
+  height: auto
+
+
+
 .post-previous, .post-next
-  position: relative
+
   background-color: $bg-grey
   height: auto
   width: 100%
@@ -85,8 +159,10 @@ time
   small
     color: #aaa
   a
-    border-bottom: none
+
     padding-top: 10px
+  a.thumbnail
+    border-bottom: none
 
   .box-wrap
     margin: 15px
@@ -94,14 +170,18 @@ time
 
   .box-1
     float: right
+    padding-left: 20px
   .box-2
     float: left
+    padding-right: 20px
 
   .box-1, .box-2
     height: 100%
+    width: 50%
     display: flex
     justify-content: center
     align-items: center
+    position: relative
     a
       padding: 0
 
@@ -114,3 +194,10 @@ time
     small
       position: absolute
       bottom: 15px
+      left: 0px
+      right: 0px
+      text-align: center
+  .box-1 small
+    left: 20px
+  .box-2 small
+    right: 20px
