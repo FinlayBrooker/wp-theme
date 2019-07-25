@@ -34,7 +34,7 @@ $odd = $_COOKIE["odd"];
 	<div class="entry-content <?php if (isset($odd)){ if ($odd) {echo "right-thumb";} else {echo "left-thumb";}}; $_COOKIE["odd"] = !$odd;?>">
 		<?php fins_small_post_thumbnail(); ?>
 		<?php
-		the_content( sprintf(
+		the_excerpt( sprintf(
 			wp_kses(
 				/* translators: %s: Name of current post. Only visible to screen readers */
 				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'yellowtractor' ),

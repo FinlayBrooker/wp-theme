@@ -12,7 +12,7 @@
  * @package yellowtractor
  */
 
-get_header(home);
+get_header('home');
 ?>
 
 
@@ -34,7 +34,7 @@ get_header(home);
         <div class="hex-bit1 bg-dark"></div>
         <div class="hex-bit2 bg-dark"></div>
         <p>My name is Finlay Brooker. I am a coder extraordinaire</p>
-        <div class="btn--gold">More</div>
+        <a href="<?php echo esc_url( home_url( '/category/more' ) ); ?>"><div class="btn--gold">More</div></a>
       </div>
     </div>
     <div class="grid-item grid-work grid-right grid-small">

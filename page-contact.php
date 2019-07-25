@@ -13,7 +13,7 @@
  */
 
 
-get_header(); ?>
+get_header('home'); ?>
 <div class="page-contact">
      <!--div class="wrap">
 		 <div class="banner-contact">

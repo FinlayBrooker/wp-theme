@@ -247,9 +247,26 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 function custom_excerpt_length( $length ) {
-        return 10;
+        return 50;
     }
     add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more($more){
+	return '<a href="'.get_permalink().'" class="post-more"><i class="fas fa-angle-double-right"></i></a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+
+function awesome_excerpt($text, $raw_excerpt) {
+    if( ! $raw_excerpt ) {
+        $content = apply_filters( 'the_content', get_the_content() );
+        $text = substr( $content, 0, strpos( $content, '</p>' ) + 4 );
+    }
+    $text = preg_replace("/<img[^>]+\>/i", "", $text);
+		$buttonmore = '<a href="'. get_permalink() . '"class="post-more">Read the full article  <i class="fas fa-angle-double-right"></i></a>';
+		return $text . $buttonmore;
+}
+add_filter( 'wp_trim_excerpt', 'awesome_excerpt', 10, 2 );
 
 /* Function which displays your post date in time ago format */
 function meks_time_ago() {
